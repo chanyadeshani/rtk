@@ -26,8 +26,9 @@ public class androidTest {
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
-        capabilities.setCapability("userName", "tiralXXXXX");
-        capabilities.setCapability("password", "XXXXX");
+        //capabilities.setCapability("userName", "tiralXXXXX");
+        capabilities.setCapability("accessToken", "xxxxxxxx");
+        //capabilities.setCapability("password", "XXXXX");
         capabilities.setCapability("platform", "ANDROID");
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("platformVersion", "8");
@@ -36,9 +37,9 @@ public class androidTest {
         capabilities.setCapability("resetKeyboard", true);
         //capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, Integer.toString(180));
         // set application from RemoteTestKit storage
-        capabilities.setCapability(MobileCapabilityType.APP, "RTKdemo.apk");
+        //capabilities.setCapability(MobileCapabilityType.APP, "RTKdemo.apk");
         // set application from HTTP Url
-        //capabilities.setCapability(MobileCapabilityType.APP, "https://github.com/remotetestkit/sample-code/raw/master/appium/apk/RTKdemo.apk");
+        capabilities.setCapability(MobileCapabilityType.APP, "https://github.com/remotetestkit/sample-code/raw/master/appium/apk/RTKdemo.apk");
         capabilities.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.example.remotetestkit.demo");
         capabilities.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "MainActivity");
 
